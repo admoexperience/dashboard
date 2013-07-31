@@ -12,13 +12,17 @@ class Dashing.Unit extends Dashing.Widget
     $(@node).fadeOut().fadeIn() # will make the node flash each time data comes in.
 
   checkOnline: =>
-    date = Date.parse(@get('checkinAt'))
-    now = new Date().getTime()
-    console.log(date)
+    screenshotDate = Date.parse(@get('screenshotCreatedAt'))
+    @set('screenshotCreatedAtMessage',moment(screenshotDate).fromNow())
 
-    console.log(now)
-    console.log(now - date)
-    console.log(1000 * 60 * 15)
+    date = Date.parse(@get('checkedinAt'))
+    @set('checkedinAtMessage',moment(date).fromNow())
+    now = new Date().getTime()
+    # console.log(date)
+
+    # console.log(now)
+    # console.log(now - date)
+    # console.log(1000 * 60 * 15)
     #15 mins since last checkin
     if now - date < 1000 * 60 * 15
       $(@node).css('background-color', '#00FF00')
