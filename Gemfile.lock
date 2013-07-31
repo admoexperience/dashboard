@@ -27,6 +27,9 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    redis (3.0.4)
+    redis-objects (0.7.0)
+      redis (>= 3.0.2)
     rufus-scheduler (2.0.23)
       tzinfo (>= 0.3.23)
     sass (3.2.10)
@@ -59,3 +62,4 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  redis-objects
