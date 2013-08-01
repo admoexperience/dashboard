@@ -17,16 +17,16 @@ class Dashing.Unit extends Dashing.Widget
 
     date = @setMomentDate('checkedinAt', 'checkedinAtMessage')
     now = new Date().getTime()
-    # console.log(date)
+    console.log(date)
 
-    # console.log(now)
-    # console.log(now - date)
-    # console.log(1000 * 60 * 15)
+    console.log(now)
+    console.log(now - date)
+    console.log(1000 * 60 * 15)
     #15 mins since last checkin
     if now - date < 1000 * 60 * 15
-      $(@node).css('border-color', '8px solid red')
+      $('.reported', @node).removeClass('error')
     else
-      $(@node).css('border-color', '5px solid green')
+      $('.reported', @node).addClass('error')
 
   setMomentDate: (dateKey, messageKey) ->
     rawDate = @get(dateKey)
