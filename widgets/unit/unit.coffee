@@ -24,9 +24,9 @@ class Dashing.Unit extends Dashing.Widget
     # console.log(1000 * 60 * 15)
     #15 mins since last checkin
     if now - date < 1000 * 60 * 15
-      $(@node).css('background-color', '#00FF00')
+      $(@node).css('border-color', '8px solid red')
     else
-      $(@node).css('background-color', '#FF0000')
+      $(@node).css('border-color', '5px solid green')
 
   setMomentDate: (dateKey, messageKey) ->
     rawDate = @get(dateKey)

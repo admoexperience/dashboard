@@ -1,13 +1,52 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #dc5945;
+$background-color:  #404041;
 
 // ----------------------------------------------------------------------------
 // Widget-clock styles
 // ----------------------------------------------------------------------------
-.widget-unit {
 
+.widget.widget-unit {
+  padding: 25px 25px;
   background-color: $background-color;
+
+  img {
+    width: 764px;
+    height: 430px;
+    display: inline-block;
+    float: right;
+    border: 2px solid #b7b7b7;
+    border-radius:5px;
+  }
+
+  .title {
+    font-size: 50pt;
+    font-weight: bold;
+  }
+
+  .data {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 35pt;
+  }
+
+  .screenshot-time, .reported, .updated-at {
+    width: 630px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15pt;
+  }
+  .error {
+    background-color:red;
+  }
+  .screenshot-time {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .updated-at {
+    font-size: 15px;
+    padding-top: 30px;
+  }
 
 }
