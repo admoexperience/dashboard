@@ -1,6 +1,9 @@
 require 'dashing'
 require 'redis-objects'
 
+USERNAME = ENV['USER_NAME'] || 'admin'
+PASSWORD =  ENV['USER_PASSWORD'] || 'password'
+
 configure do
   set :auth_token, (ENV['AUTH_TOKEN'] || 'YOUR_AUTH_TOKEN')
 
@@ -28,7 +31,7 @@ configure do
 
     def authorized?
       @auth ||=  Rack::Auth::Basic::Request.new(request.env)
-      @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [ENV['USER_NAME'], ENV['USER_PASSWORD']]
+      @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [USERNAME, PASSWORD]
     end
   end
 end
