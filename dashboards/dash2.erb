@@ -7,7 +7,7 @@
 </script>
 <div class="gridster">
   <ul>
-    <% units = (ENV['UNITS2']|| 'Admo-HP').split(',')
+    <% units = (ENV['UNITS2']|| 'Admo-HP,Admo-Room').split(',')
     units.each do |unit |%>
      <li data-row="1" data-col="1" data-sizex="4" data-sizey="2">
         <div data-view="Unit" data-id="<%= unit%>" data-name="<%= unit%>"></div>
@@ -15,10 +15,6 @@
     <% end%>
     <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
       <div data-view="Image" data-image="/admo-logo.png"></div>
-    </li>
-
-    <li data-row="3" data-col="5" data-sizex="4" data-sizey="2">
-      <div data-view="Iframe" data-url="http://status.admo.co"></div>
     </li>
   </ul>
 </div>
