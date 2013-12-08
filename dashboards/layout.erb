@@ -14,13 +14,18 @@
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="icon" href="/assets/favicon.ico">
-
+  <script type='text/javascript'>
+    $(function() {
+      Dashing.widget_base_dimensions = [360, 245];
+      Dashing.numColumns = 5;
+  });
+  </script>
 </head>
   <body>
     <div id="container">
       <%= yield %>
     </div>
-  
+
     <% if development? %>
       <div id="saving-instructions">
         <p>Paste the following at the top of <i><%= params[:dashboard] %>.erb</i></p>
