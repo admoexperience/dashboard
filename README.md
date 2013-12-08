@@ -9,5 +9,5 @@ Required enviroment variables to get it running on heroku
 |USER_NAME    | admin         | Basic auth to access the dashboard |
 |USER_PASSWORD| password      | Basic auth to access the dashboard |
 |UNITS2       | Admo-1,Admo-2 | Which units to display(current 2 per screen/instance) |
-|UNITS2|      | Admo-3,Admo-3 | Which units to display(current 2 per screen/instance) |
+|UNITS2       | Admo-3,Admo-3 | Which units to display(current 2 per screen/instance) |
 
