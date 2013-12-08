@@ -1,5 +1,8 @@
 Check out http://shopify.github.com/dashing for more information.
 
+![Screenshot](https://bitbucket.org/fireid/admo-dashboard/raw/master/docs/screenshot.png "Screenshot")
+
+
 
 Required enviroment variables to get it running on heroku
 --------
