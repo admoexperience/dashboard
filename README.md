@@ -20,4 +20,4 @@ Updating the dashboard either via curl or via code
 
 Pictures
 
-![Screenshot](https://bitbucket.org/fireid/admo-dashboard/raw/master/docs/screenshot.png "Screenshot")
+![Screenshot](docs/screenshot.png "Screenshot")
